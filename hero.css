@@ -1,0 +1,105 @@
+*{
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+/* Header Styling */
+header{
+    width: 100dvw;
+    min-height: 50px;
+    background-image: linear-gradient(to right, black, blue);
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+}
+
+.imageName{
+    display: flex;
+}
+
+.drop{
+    position: relative;
+    padding-top: 10px;
+}
+.drop:hover .drop_down{
+    display: block;
+}
+.drop_down{
+    position: absolute;
+    display: none;
+}
+.drop_down a{
+    padding: 5px;
+}
+
+/* Section  Styling - Hero */
+.hero{
+    min-height: 100dvh;
+    background: url(./Multimedia/2.png) no-repeat right fixed;
+    background-size: 50dvw 30dvw;
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+}
+.hero_div{
+    width: 40dvw;
+    animation: animation 2s linear 0s 1 alternate forwards;
+}   
+.hero_div>h1{
+    font-size: 3em;
+}
+.hero_div>h3{
+    font-size: 2em;
+}
+.hero_div>p{
+    font-size: 1.2em;
+}
+
+@keyframes animation {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* Section Styling - About */
+.about{
+    min-height: 100dvh;
+    background-color: aqua;
+}
+
+/* Section Styling - Skills */
+.skill{
+    min-height: 100dvh;
+    background-color: darkblue;
+}
+
+/* Section Styling - Contact */
+.contact{
+    min-height: 100dvh;
+}

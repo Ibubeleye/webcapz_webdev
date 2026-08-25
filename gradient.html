@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient in CSS</title>
+    <style>
+        div{
+            border: 2px solid;
+            width: 200px;
+        }
+        div.a {
+            word-wrap: break-word;
+        }
+        p {
+  width: 140px; 
+  border: 1px solid #000000;
+}
+
+        p.a {
+            word-break: normal;
+        }
+
+        p.b {
+            word-break: keep-all;
+        }
+
+        p.c {
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <h2>Long Word Example</h2>
+        <p>This div contains a very long word: thisisaveryveryveryveryveryverylongword.</p>
+    </div>
+    <h1>The word-break Property</h1>
+
+    <h2>word-break: normal (default):</h2>
+    <p class="a">Thisissomeveryveryverylong word. Words will break according to usual rules.</p>
+
+    <h2>word-break: keep-all:</h2>
+    <p class="b">Thisissomeveryveryverylong word. This text will-break-at-hyphens.</p>
+
+    <h2>word-break: break-all:</h2>
+    <p class="c">Thisissomeveryveryverylong word. This text will break at any character.</p>
+</body>
+</html>

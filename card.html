@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        .card{
+            border: 3px solid black;
+            width: 200px;
+            height: 300px;
+            position: relative; 
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgb(110, 100, 100);
+        }
+        img{
+            width: 100%;
+            height: 40%;
+        }
+        .btn1, .btn2{
+            position: absolute;
+            background-color:white;
+            height: 30px;
+            color: black;
+        }
+        .btn1{
+            left: 5px;
+            bottom: 5px;
+        }
+        .btn2{
+            right: 5px;
+            bottom: 5px;
+        }
+        button:hover{
+            background-color:black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="./Multimedia/img_for_card.webp" alt="Game Console">
+        <h2>PlayStation 4 Slim</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At autem sapiente quasi porro debitis amet.</p>
+        <button class="btn1">Read More</button><button class="btn2">Add to Cart</button>
+    </div>
+</body>
+</html>

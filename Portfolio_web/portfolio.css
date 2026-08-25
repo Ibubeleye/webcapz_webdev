@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styling */
+header{
+    width: 100dvw;
+    height: 30px;
+    display: flex;
+    color: grey;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    border-bottom: 0.5px ;
+    box-shadow: 1px 1px 3px  rgba(145, 141, 141, 0.418);
+}
+
+nav > ul{
+    list-style-type: none;
+    display: flex;
+    padding-right: 70px;
+}
+
+nav a{
+    padding: 7px;
+    text-decoration: none;
+    color: grey;
+    display: block;
+    font-size: 14px;
+}
+.div_head{
+    padding-left: 70px;
+}
+
+/* Home */
+.home{
+    min-height: 100dvh;
+    background: url(./portfolio_multimedia/ai_boy.png) no-repeat right ;
+    background-size: 50dvw 40dvw;
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.home_div{
+    width: 40dvw;
+}
+.home_div > h1{
+    font-size: 2.65em;
+    color: #5E5DDD;
+    margin-bottom: 15px;
+}
+.home_div > h3{
+    font-size: 1.3em;
+    font-weight: lighter;
+    color: #2F313F;
+    margin-bottom: 25px;
+}
+.home_btn1, .home_btn2{
+    width: 90px;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.home_btn1{
+    background-color: #5E5DDD;
+}
+.home_btn2{
+    background-color: #E7A17E;
+}
+
+/* About */
+.about{
+    min-height: 100dvh;
+    background-color: #F6F6F7;
+    padding: 80px 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+    /* box-shadow: 5px 5px 15px 0px #00000033;
+    border-radius: 8px; */
+}
+.about_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_img img{
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.about_div{
+    max-width: 550px;
+}
+
+.about_div  h2{
+    color: #5E5DDD;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+.about_div > p{
+    color: #6E6E78;
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.features {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.features li {
+    color: #2F313F;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.features li::marker {
+    color: #E76F73;
+}
+.about_buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.abt_btn button {
+    width: 90px;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px 0px #00000033;
+    border-radius: 8px;
+}
+
+.abt_btn1 {
+    background-color: #5E5DDD;
+}
+
+.abt_btn2 {
+    background-color: #E7A17E;
+}
+
+
+/* Portfolio */
+.portfolio{
+    text-align: center;
+    min-height: 100dvh;
+}
+.pf_div > h1{
+    border-bottom: 2px ;
+
+}

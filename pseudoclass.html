@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClasses</title>
+    <style>
+        ul>li:first-child{
+            color: red;
+        }
+        ul>li:last-child{
+            color: blue;
+        }
+        ul>li:nth-child(3){
+            color: green;
+        }
+        ul>.list:not(.list1){
+            background-color: yellow;
+        }
+
+        /* input[type="text"]:focus{
+            background-color: bisque;
+        } */
+        input:focus{
+            background-color: black;
+        }
+
+        .listy{
+            list-style-type: none;
+        }
+        .listy1::before{
+            content: url("./Multimedia/homeicon.png")
+        }
+        .listy2::after{
+            content: url("./Multimedia/abouticon.png")
+        }
+        .para1::first-letter{
+            color: red;
+            font-size: 32px;
+        }
+        .para1::first-line{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>PseudoClasses</h1>
+    <ul>
+        <li class="list">list1</li>
+        <li class="list1">list2</li>
+        <li class="list">list3</li>
+        <li class="list">list4</li>
+    </ul>
+
+    <input type="text">
+    <input type="password">
+    <!-- Pseudo Elements -->
+    <ol>
+        <li class="listy listy1">Home</li>
+        <li class="listy listy2">About</li>
+        <li class="listy listy3">Contact</li>
+        <li class="listy listy4">Signup</li>
+    </ol>
+
+    <p class="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum ad hic, tempora quos assumenda facere modi nobis, repudiandae harum veritatis vitae corrupti suscipit possimus ullam incidunt deleniti. Vitae, eveniet? Eveniet?</p>
+</body>
+</html>

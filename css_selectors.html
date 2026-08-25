@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors & Combinators</title>
+    <style>
+        /* Universal selector */
+        *{
+            background-color: blue;
+        }
+        /* Grouping selectors */
+        #div1,#div2,.divclass{
+            background-color: blueviolet;
+        }
+        /*Attribute selectors */
+        input[type="text"]{
+            background-color: red;
+        }
+        input[type="password"]{
+            background-color: green;
+        }
+        /* .div3>p{
+            background-color: yellow;
+        } */
+        .div3 p{
+            background-color: gold;
+        }
+        
+        .div3 + p{
+            background-color: gold;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <!-- This is a simple example of a universal selector
+     it selects everything in the html document and the symbol * represents all elements -->
+    <!-- Grouping selectors -->
+    <p>forever</p>
+    <div id="div1">WOW</div>
+    <div class="divclass">WOW</div>
+    <div id="div2">WOW</div>
+
+    <input type="text" name=""><br>
+    <input type="password" name="password">
+
+    <div class="div3">
+        <h1>Heading</h1>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <div>
+            <p>Paragraph inside div</p>
+        </div>
+    </div>
+    <p>Paragraph</p>
+</body>
+</html>

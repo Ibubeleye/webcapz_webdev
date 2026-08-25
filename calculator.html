@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .grid-container{
+            display: grid;
+            border: 3px solid;
+            width: 350px;
+            height: 500px;
+            margin: 75px auto;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 10px;
+            gap: 7px;
+            border-radius: 15px;
+            background-color: rgb(180, 179, 179);
+        }
+        .grid-item{
+            display: grid;
+            border: 1px solid;
+            text-align: center;
+            align-items: center;
+            border-radius: 15%;
+            background-color: rgb(224, 224, 224);
+        }
+        .item1{
+            grid-area: 1/1/2/5;
+            border-radius: 10px;
+            box-shadow: 4px 5px 7px  rgba(145, 141, 141, 0.418) inset;
+        }
+        .item20{
+            grid-area: 6/3/7/5;
+            border-radius: 10px;
+        }
+        .item2, .item3{
+            background-color: red;
+        }
+        .item4, .item5, .item9, .item13, .item17, .item18, .item20{
+            background-color: black;
+            color: white;
+        }
+        .grid-item:not(.item1):hover{
+            background-color: rgb(255, 222, 58);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="grid-item item1"></div>
+        <div class="grid-item item2">AC</div>
+        <div class="grid-item item3">C</div>
+        <div class="grid-item item4">%</div>
+        <div class="grid-item item5">+</div>
+        <div class="grid-item item6">7</div>
+        <div class="grid-item item7">8</div>
+        <div class="grid-item item8">9</div>
+        <div class="grid-item item9">-</div>
+        <div class="grid-item item10">4</div>
+        <div class="grid-item item11">5</div>
+        <div class="grid-item item12">6</div>
+        <div class="grid-item item13">x</div>
+        <div class="grid-item item14">1</div>
+        <div class="grid-item item15">2</div>
+        <div class="grid-item item16">3</div>
+        <div class="grid-item item17">/</div>
+        <div class="grid-item item18">.</div>
+        <div class="grid-item item19">0</div>
+        <div class="grid-item item20">=</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            border: 1px solid;
+            height: 500px;
+            position: relative;
+        }
+        img{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            animation: fly 10s ease-in-out 2s 1 alternate forwards;
+        }
+
+        @keyframes fly{
+            0%{
+                transform: translate(0, 0);
+            }
+            30%{
+                transform: translate(400px, -400px);
+            }
+            60%{
+                transform: translate(800px, -400px);
+            }
+            100%{
+                transform: translate(1200px, 30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./Multimedia/plane.jpg" alt="Airplane" width="100px" height="100px">
+    </div>
+</body>
+</html>

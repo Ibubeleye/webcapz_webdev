@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        div{
+            border: 1px solid;
+            height: 200px;
+            width: 200px;
+            /* border-radius: 50%;  */
+            background-color: blue;
+
+            animation-name: animate;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+            animation-delay: 0.5s;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+            animation-fill-mode: backwards;
+        }
+        @keyframes animate{
+            from{
+                background-color: blue; 
+                /* transform: translate(0px); */
+                /* transform: rotateX(0deg) translateX(0px); */
+                transform: skewX(0deg);
+            }
+            to{
+                background-color: red;
+                /* transform: translate(100px, 100px); */
+                /* transform: rotateX(360deg); */
+                /* transform: rotateX(360deg) translateX(100px); */
+                /* transform: rotateZ(360deg); */
+                transform: skewX(30deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        A Circle
+    </div>
+</body>
+</html>
