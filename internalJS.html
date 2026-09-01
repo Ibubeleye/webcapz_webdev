@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal JS</title>
+</head>
+<body>
+    <h1 id="head1">Hello World</h1>
+    <h2 id="head2">Content</h2>
+
+    <button onclick="changeText()">Click to change Heading</button>
+    <button onclick="changeText2(10, 5)">Click to change Content</button>
+
+    <script>
+        let content = document.getElementById('head1');
+        let content2 = document.querySelector('#head2');
+
+        function changeText() {
+            content.innerHTML = "Hello Everyone";
+        }
+        function changeText2(x,y) {
+            // content2.innerHTML = "Wow";
+
+            // let x = 5;
+            // let y = 30;
+            // let z = x + y;
+            // content2.innerHTML = z;
+
+            let z = x + y;
+            content2.innerHTML = z;
+            alert("The answer is: " + z);
+        }
+    </script>
+</body>
+</html>
