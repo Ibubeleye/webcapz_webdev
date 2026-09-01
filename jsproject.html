@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card{
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img id="img1" src="./Multimedia/men_shoes.jpg" alt="">
+    </div>
+
+
+    <button onclick="changeImage()">Image 1</button>
+    <button onclick="changeImage1()">Image 2</button>
+
+
+    <div class="calc">
+        <p id="result"></p>
+    </div>
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+        let img1 = document.getElementById('img1');
+
+        function changeImage1() {
+            img1.src = "./Multimedia/men_shoes_2.webp";
+        }
+        function changeImage() {
+            img1.src = "./Multimedia/men_shoes.jpg";
+        }
+
+        function calculate() {
+            let a = 5;
+            let b = 29;
+
+            let c = a + b;
+            document.getElementById('result').innerText = "The answer is: " + c;
+        }
+    </script>
+</body>
+</html>
