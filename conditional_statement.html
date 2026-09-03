@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="inp1">What is your name?</label>
+    <input type="text" id="inp1">
+
+    <br>
+
+    <label for="inp2">How old are you?</label>
+    <input type="number" id="inp2">
+
+    <div id="ans"></div>
+    <button onclick="display()">Display</button>
+
+    <script>
+        // let day = document.getElementById('day');
+        let inp1 = document.getElementById('inp1');
+        let inp2 = document.getElementById('inp2');
+
+        // let week_day = "Monday";
+        
+
+        function display() {
+
+            let age_disp = inp2.value;
+            let name_disp = inp1.value;
+            
+            ans.innerHTML = `My name is ${name_disp} and I am ${age_disp} years old`;
+        }
+
+        // if (week_day == "Monday") {
+        //     day.innerHTML = "Monday";
+        // }else {
+        //     // day.innerHTML = "Today is not Monday";
+
+        //     // String Concatenation
+        //     // day.innerHTML = "My name is" + name + " and I am " + age + " years old";
+        //     day.innerHTML = `My name is ${name_value} and I am ${age_value} years old`;
+        // }
+    </script>
+</body>
+</html>

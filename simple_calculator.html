@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input type="number" name="" id="inp1">
+    <select name="" id="operators">
+        <option value="+">+</options>
+        <option value="-">-</options>
+        <option value=""></options>
+        <option value="/">/</options>
+        <option value="%">%</options>
+    </select>
+
+    <input type="number" name="" id="inp2">
+
+    <div class="ans"></div>
+    <button onclick="calculate()">click for answer</button>
+
+    <script>
+        let inp1 = document.getElementById('inp1');
+        let operators = document.getElementById('operators');
+        let inp2 = document.getElementById('inp2');
+        let ans = document.querySelector('.ans');
+
+        function calculate(){
+            let value1 = inp1.value;
+            let value2 = inp2.value;
+           
+
+            if(operators.value == "+"){
+                ans.innerHTML = value1 + value2;
+
+            }
+            if(operators.value == "-"){
+                ans.innerHTML = value1 - value2;
+
+            }
+            if(operators.value == "/"){
+                ans.innerHTML = value1 / value2;
+
+            }
+            if(operators.value == "*"){
+                ans.innerHTML = value1 * value2;
+
+            }
+            if(operators.value == "%"){
+                ans.innerHTML = value1 % value2;
+
+            }
+
+        }
+
+    </script>
+</body>
+</html>
