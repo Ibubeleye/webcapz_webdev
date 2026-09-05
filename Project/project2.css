@@ -7,7 +7,7 @@
 
 body, html{
     scroll-behavior: smooth;
-    scroll-padding-top: 20px;   
+    /* scroll-padding-top: 20px;    */
 }
 
 /* Header */
@@ -36,15 +36,11 @@ nav a{
 /* Hero/head */
 .home{
     min-height: 100dvh;
-    background: url(./portfolio_multimedia/me4.jpeg)  center ;
-    align-items: center;
+    background: url(./portfolio_multimedia/me4_new.png) no-repeat right ;
+    background-size: 50dvw 50dvw;
+    background-color: #1F233B; /* find new color */
     display: flex;
     color: #F1F1F3;
-    padding: 180px;
-}
-.home h2{
-    font-size: 2.7em;
-}
-.home p{
-    font-size: 1.5em;
+    padding: 50px;
+    align-items: center;
 }

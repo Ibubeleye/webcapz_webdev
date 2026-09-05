@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #light{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #imglight{
+            width: 300px;
+            height: 300px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="light">
+        <img src="./Multimedia/light_on.jpg" alt="" id="imglight">
+    </div>
+    <button id="btnlight">Turn Off</button>
+
+    <script>
+        let btnlight = document.getElementById("btnlight"); 
+        let imglight = document.getElementById("imglight");
+
+        btnlight.addEventListener('click', function(){
+            if (imglight.src.includes("light_on.jpg")) {
+                imglight.src = "Multimedia\\light_off2.png";
+                btnlight.innerHTML = "Turn On";
+            } else {
+                imglight.src = "./Multimedia/light_on.jpg";
+                btnlight.innerHTML = "Turn Off";
+            }
+        })
+    </script>
+</body>
+</html>

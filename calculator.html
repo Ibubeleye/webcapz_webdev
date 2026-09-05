@@ -42,34 +42,52 @@
             color: white;
         }
         .grid-item:not(.item1):hover{
-            background-color: rgb(255, 222, 58);
+            background-color: rgb(122, 104, 10);
         }
     </style>
 </head>
 <body>
     
     <div class="grid-container">
-        <div class="grid-item item1"></div>
-        <div class="grid-item item2">AC</div>
-        <div class="grid-item item3">C</div>
-        <div class="grid-item item4">%</div>
-        <div class="grid-item item5">+</div>
-        <div class="grid-item item6">7</div>
-        <div class="grid-item item7">8</div>
-        <div class="grid-item item8">9</div>
-        <div class="grid-item item9">-</div>
-        <div class="grid-item item10">4</div>
-        <div class="grid-item item11">5</div>
-        <div class="grid-item item12">6</div>
-        <div class="grid-item item13">x</div>
-        <div class="grid-item item14">1</div>
-        <div class="grid-item item15">2</div>
-        <div class="grid-item item16">3</div>
-        <div class="grid-item item17">/</div>
-        <div class="grid-item item18">.</div>
-        <div class="grid-item item19">0</div>
-        <div class="grid-item item20">=</div>
+        <button class="grid-item item1"></button>
+        <button class="grid-item item2" onclick="calc('AC')">AC</button>
+        <button class="grid-item item3" onclick="calc('C')">C</button>
+        <button class="grid-item item4" onclick="calc('%')">%</button>
+        <button class="grid-item item5" onclick="calc('+')">+</button>
+        <button class="grid-item item6" onclick="calc('7')">7</button>
+        <button class="grid-item item7" onclick="calc('8')">8</button>
+        <button class="grid-item item8" onclick="calc('9')">9</button>
+        <button class="grid-item item9" onclick="calc('-')">-</button>
+        <button class="grid-item item10" onclick="calc('4')">4</button>
+        <button class="grid-item item11" onclick="calc('5')">5</button>
+        <button class="grid-item item12" onclick="calc('6')">6</button>
+        <button class="grid-item item13" onclick="calc('x')">x</button>
+        <button class="grid-item item14" onclick="calc('1')">1</button>
+        <button class="grid-item item15" onclick="calc('2')">2</button>
+        <button class="grid-item item16" onclick="calc('3')">3</button>
+        <button class="grid-item item17" onclick="calc('/')">/</button>
+        <button class="grid-item item18" onclick="calc('.')">.</button>
+        <button class="grid-item item19" onclick="calc('0')">0</button>
+        <button class="grid-item item20" onclick="calc('=')">=</button>
     </div>
 
+    <script>
+        let display = document.querySelector('.item1');
+
+        function calc(num){
+            
+            if(num == '='){
+                display.innerHTML = eval(display.innerHTML);
+                return; 
+            }
+            else if (num == 'AC' || num == 'C'){
+                display.innerHTML = '';
+                return;
+            }
+            else{
+                display.innerHTML += num;
+            }
+        }
+    </script>
 </body>
 </html>
