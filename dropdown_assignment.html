@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #faq {
+            width: 90%;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        #question {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #answer {
+            background-color: white;
+            padding: 20px;
+            margin-top: 5px;
+            border-radius: 8px;
+            display: none;
+            box-shadow: 0 2px 8px black;
+        }
+
+        #btn {
+            border: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="faq">
+
+        <div id="question">
+            <p>How do I reset my password?</p>
+
+            <button id="btn">&gt;</button>
+        </div>
+
+        <div id="answer">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint error debitis itaque quidem modi recusandae ipsa qui eum perspiciatis laboriosam.
+            </p>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        let btn = document.getElementById("btn");
+        let answer = document.getElementById("answer");
+
+        btn.addEventListener('click', function(){
+
+            if (answer.style.display == "none" || answer.style.display == "") {
+
+                answer.style.display = "block";
+                btn.innerHTML = "⌃";
+
+            } else {
+
+                answer.style.display = "none";
+                btn.innerHTML = "⌄";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
