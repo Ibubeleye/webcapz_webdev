@@ -38,6 +38,13 @@ function Car(image, name, color, engineNo) {
     this.engineNo = engineNo;
 }
 
-let Toyota = new Car("https://res.cloudinary.com/v62xcsbx/image/upload/v1789479803/2.png", "Corolla", )
+let Toyota = new Car("https://res.cloudinary.com/v62xcsbx/image/upload/v1789479803/2.png", "Corolla", "Black", 356353);
 
-console.log()
+
+console.log(Toyota.name);
+
+//Iterating an Object for in loop
+
+for (let key in Toyota) {
+    console.log(`${key} : ${Toyota[key]}`)
+}
